@@ -21,6 +21,20 @@ void correctPrevPointers(Node* head) {
     }
 }
 
+void correctNextPointers(Node* head) {
+    Node* curr = head;
+    while(curr->next!=nullptr) {
+        curr = curr->next;
+    }
+    while(curr->prev) {
+    if (curr->prev->next!=curr) {
+        curr->prev->next = curr;
+    }
+        curr = curr->prev;
+    }
+    
+}
+
 void printList(Node* head) {
     Node* curr = head;
     while (curr) {
@@ -59,6 +73,7 @@ int main() {
     printListReverse(head);
 
     correctPrevPointers(head);
+    correctNextPointers(head);
 
     cout << "After correction: ";
     printList(head);
