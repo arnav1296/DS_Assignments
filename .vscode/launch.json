@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/Arnav/IMP_COLLGE/3rd Sem/Data Structures/DS_Assignments/assignment_4_queues",
+      "program": "d:/Arnav/IMP_COLLGE/3rd Sem/Data Structures/DS_Assignments/assignment_4_queues/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
