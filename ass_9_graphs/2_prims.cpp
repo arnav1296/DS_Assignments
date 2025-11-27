@@ -9,15 +9,15 @@ int prims(int V, vector<vector<int>> adj[]) {
         auto it = pq.top();
         pq.pop();
         int wt = it.first;
-        int node = it.second;
-        if(visited[node] == true) continue;
-        visited[node] = true;
+        int u= it.second;
+        if(visited[u] == true) continue;
+        visited[u] = true;
         sum+=wt;
-        for(auto it : adj[node]) {
-            int adjNode = it[0];
+        for(auto it : adj[u]) {
+            int v = it[0];
             int edgeW = it[1];
-            if(!visited[adjNode]) {
-                pq.push({edgeW, adjNode});
+            if(!visited[v]) {
+                pq.push({edgeW, v});
             }
 
         }

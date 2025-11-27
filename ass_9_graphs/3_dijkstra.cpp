@@ -21,7 +21,7 @@ vector<int> dijkstra(vector<vector<pair<int,int>>>& adj, int src) {
         if (d > dist[u])
             continue;
 
-        for (auto &p : adj[u]) {
+        for (auto p : adj[u]) {
             int v = p.first; 
             int w = p.second; 
 
@@ -51,4 +51,4 @@ int main() {
         cout << d << " ";
 
     return 0;
-}
+}   
